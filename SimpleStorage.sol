@@ -20,7 +20,7 @@ contract SimpleStorage {
     // mapping = dictionary, provide a key to output value
     mapping(string => uint256) public nameToFavNumber;
 
-    function store(uint256 _favNumber) public {
+    function store(uint256 _favNumber) public virtual {
         favNumber = _favNumber;
         retrieve();
     }
